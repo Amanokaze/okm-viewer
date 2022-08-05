@@ -13,7 +13,7 @@
     </a>
   </div>
   <h1>Vite + Svelte</h1>
-
+  <h2>Hello world!</h2>
   <div class="card">
     <Counter />
   </div>
