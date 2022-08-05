@@ -1,0 +1,11 @@
+name: Check the JavaScript source code in the viewer
+on: [push]
+jobs:
+  code-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm i
+    - name: Run ESLint
+      run: npx eslint . --ext .js,.svelte
