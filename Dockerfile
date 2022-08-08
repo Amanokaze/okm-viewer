@@ -1,5 +1,4 @@
-FROM node:12 AS build
-
+FROM node:16-buster-slim AS build
 WORKDIR /app
 
 COPY package.json ./
